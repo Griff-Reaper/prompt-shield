@@ -8,7 +8,7 @@
 [![Security](https://img.shields.io/badge/OWASP-LLM%20Top%2010-red)](https://owasp.org/www-project-top-10-for-large-language-model-applications/)
 [![Latency](https://img.shields.io/badge/latency-<10ms-brightgreen)]()
 
-![Prompt-Shield Detection Demo](Screenshot 2026-02-10 213847.png)
+![Prompt-Shield Detection Demo](prompt-shield_screenshot.png)
 > Real-time prompt injection detection system protecting AI applications against OWASP LLM Top 10 threats. Deploy as middleware, microservice, or Python library with sub-10ms latency.
 
 ---
