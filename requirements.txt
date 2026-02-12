@@ -1,17 +1,85 @@
-# Core API framework
-fastapi>=0.109.0
-uvicorn[standard]>=0.27.0
-pydantic>=2.5.0
+# Prompt-Shield Requirements
+# Enterprise Prompt Injection Detection System
+# Python 3.11+ required
 
-# HTTP requests for testing
-requests>=2.31.0
+# ============================================
+# CORE DEPENDENCIES
+# ============================================
 
-# Testing
-pytest>=8.0.0
-pytest-asyncio>=0.23.0
-httpx>=0.26.0  # For testing FastAPI
+# API framework for integration examples
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
 
-# Optional: Enhanced detection (for future)
-# transformers>=4.36.0  # For semantic analysis
-# torch>=2.1.0  # For ML-based detection
-# scikit-learn>=1.4.0  # For anomaly detection
+# Data validation
+pydantic>=2.0.0
+
+# ============================================
+# DETECTION ENGINES
+# ============================================
+
+# NLP and text processing (for semantic detection)
+# These are optional but recommended for production
+# transformers>=4.35.0
+# torch>=2.1.0
+# scikit-learn>=1.3.0
+
+# ============================================
+# TESTING & VALIDATION
+# ============================================
+
+# Testing framework
+pytest>=7.4.0
+pytest-cov>=4.1.0
+pytest-asyncio>=0.21.0
+
+# ============================================
+# DEVELOPMENT
+# ============================================
+
+# Code quality
+pylint>=3.0.0
+black>=23.10.0
+mypy>=1.6.0
+
+# Type stubs for better type checking
+types-requests>=2.31.0
+
+# ============================================
+# OPTIONAL: ENHANCED FEATURES
+# ============================================
+
+# Advanced NLP (for enhanced semantic detection)
+# spacy>=3.7.0
+# nltk>=3.8.0
+
+# Machine learning (for custom model training)
+# pandas>=2.1.0
+# numpy>=1.26.0
+# matplotlib>=3.8.0
+
+# API client for testing against real LLMs
+# anthropic>=0.30.0
+# openai>=1.0.0
+
+# ============================================
+# INSTALLATION NOTES
+# ============================================
+#
+# BASIC INSTALL (minimum to run):
+#   pip install fastapi uvicorn pydantic pytest
+#
+# PRODUCTION INSTALL (recommended):
+#   pip install -r requirements.txt
+#   Then uncomment ML libraries and install:
+#   pip install transformers torch scikit-learn
+#
+# DEVELOPMENT INSTALL:
+#   pip install -r requirements.txt
+#
+# BENCHMARKING AGAINST REAL LLMs:
+#   Uncomment anthropic or openai
+#   Set API keys in environment
+#
+# ADVANCED NLP FEATURES:
+#   Uncomment spacy and nltk
+#   Download models: python -m spacy download en_core_web_sm
